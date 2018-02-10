@@ -1,0 +1,4 @@
+*.pyc
+__pycache__/
+*sqlite*
+local_settings.py
