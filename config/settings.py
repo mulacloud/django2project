@@ -5,7 +5,7 @@ Django {{ django_version }} settings for internal mula  project.
 import os
 import sys
 
-from django.contrib import messages
+from django.contrib.messages import constants as messages
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
