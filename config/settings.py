@@ -1,5 +1,5 @@
 """
-Django settings for internal mula  project.
+Django {{ django_version }} settings for internal mula  project.
 """
 
 import os
@@ -10,7 +10,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(BASE_DIR, "apps"))
 sys.path.insert(0, os.path.join(BASE_DIR, "libs"))
 
-SECRET_KEY = 'th5k!-yu)0%^1rnl_c3(d^h=*q1-)+z6_!m8@!+1coe)mkl4c-'
+SECRET_KEY = '{{ secret_key }}'
 
 DEBUG = True
 
@@ -35,7 +35,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'configuration.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -53,7 +53,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'configuration.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
